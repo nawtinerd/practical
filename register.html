@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ifenna">
+    <meta name="description" content="this is my first form page for web development class">
     <title>REGISTER</title>
 </head>
-<body style="background-color:rgb(4, 82, 82);">
+<body style="background-color:rgb(4, 82, 82);"> 
     <h1 style="text-align:center; color:azure;">ICEBOOK</h1>
     <div>
         <form action="post">
@@ -30,10 +32,10 @@
         <input type="password" id="confirm password" placeholder="confirm your password" required>
     </div> <br><br>
     <div>
-        <label for="" style="color:azure;" required>DOB</label> <br>
+        <label for="" style="color:azure;">DOB</label> <br>
         <label for="month" style="color:azure;" required>MONTH</label> 
-        <select value="">--SELECT MONTH-- <br>
-            <option value="--SELECT MONTH">--SELECT MONTH</option>
+        <select name="month" id="month" required>--SELECT MONTH-- <br>
+            <option value="">--SELECT MONTH</option>
             <option value="--JANUARY">JANUARY</option>
             <option value="FEBRUARY">FEBRUARY</option>
             <option value="MARCH">MARCH</option>
@@ -48,8 +50,8 @@
             <option value="DECEMBER">DECEMBER</option>
         </select>
         <label for="day" style="color:azure;">DAY</label> 
-        <select value="">--SELECT DAY-- <br>
-            <option value="--SELECT DAY">--SELECT DAY--</option>
+        <select name="day" id="year" required>--SELECT DAY-- <br>
+            <option value="">--SELECT DAY--</option>
             <option value="01">01</option>
             <option value="02">02</option>
             <option value="03">03</option>
@@ -83,8 +85,8 @@
             <option value="31">31</option>
         </select>
         <label for="year" style="color:azure;" required>YEAR</label> 
-        <select value="">--SELECT YEAR-- <br>
-            <option value="--SELECT YEAR--">--SELECT YEAR--</option>
+        <select name="year" id="year" required>
+            <option value="">--SELECT YEAR--</option>
             <option value="1995">1995</option>
             <option value="1996">1996</option>
             <option value="1997">1997</option>
@@ -115,21 +117,30 @@
         </select>            
     </div> <br><br>
     <div>
-        <label for="" required>GENDER</label> <br>
-        <label for="male"required>MALE</label>
+        <label for="gender" style="color:white;"></label> GENDER</label> <br>
+        <label for="male">MALE</label>
         <input type="radio" name="gender" id="male">
-        <label for="female" required>FEMALE</label>
+        <label for="female">FEMALE</label>
         <input type="radio" name="gender" id="female">
-        <label for="others" required>OTHERS</label>
+        <label for="others">OTHERS</label>
         <input type="radio" name="gender" id="others">
     </div> <br><br>
     <div>
-        <label for="">SECURITY QUESTION</label> <br>
-        <textarea name="more about you" id="" cols="30" rows="20" value="who is your daddy?????">Is your daddy Bop Daddy????</textarea> <br><br>
+        <label for="security question">SECURITY QUESTION</label>
+        <select name="security question" id="security question">
+          <option value="">--Select Below--</option>
+          <option value="question one">Your favorite car</option>
+          <option value="question two">Your childhood bestie</option>
+          <option value="question three">Who is your Daddy</option>
+          <option value="question four">Shey oni CC</option>
+        </select> <br><br>
+        <label for="security answer">Answer</label> <br>
+        <textarea name="security answer" id="" cols="30" rows="20">Your answer here</textarea> <br><br>
+        <label for="age">18+</label> <br>
         <label for="YES">YES</label>
-        <input type="radio" name="security" id="YES">
+        <input type="radio" name="age" id="YES">
         <label for="NO">NO</label>
-        <input type="radio" name="security" id="NO">
+        <input type="radio" name="age" id="NO">
     </div> <br><br>
     <div>
         <button type="submit">SUBMIT</button>
